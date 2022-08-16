@@ -1,7 +1,15 @@
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+
+
 export default function Expenses() {
   return (
-    <main style={{ padding: "1rem 0" }}>
-      <h2>Globe</h2>
-    </main>
+    <Canvas style={{height:'50em'}}>
+      <mesh name='earth'>
+      <sphereGeometry args={[4, 20, 20]} />
+      <meshNormalMaterial wireframe/>
+      </mesh>
+      <OrbitControls />
+    </Canvas>
   );
 }

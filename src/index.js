@@ -13,9 +13,9 @@ import Globe from './globe/index'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <Routes>
+    <Routes>
       <Route path="/" element={<App />} />
-      <Route path="expenses" element={<Globe />} />
+      <Route style={{height:'100%'}} path="globe" element={<Globe />} />
     </Routes>
   </BrowserRouter>
 );

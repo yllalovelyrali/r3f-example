@@ -9,6 +9,7 @@ function App() {
         style={{
           borderBottom: "solid 1px",
           paddingBottom: "1rem",
+          paddingLeft: "1rem",
         }}
       >
         {/* <Link to="/invoices">Invoices</Link> |{" "} */}
