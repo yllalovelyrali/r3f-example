@@ -6,6 +6,8 @@ import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
 import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass'
 
+import {CurveModifierSt} from '../components/testCurveModifier.tsx'
+
 extend({ EffectComposer, RenderPass, GlitchPass })
 
 export default function Expenses() {
@@ -74,7 +76,8 @@ export default function Expenses() {
       <Clouds />
       <ambientLight color="0x111111" />
       <directionalLight color="0xffffff" position={[100, 10, -50]}/>
-      {/* <OrbitControls /> */}
+      <OrbitControls />
+      <CurveModifierSt />
       <Effect />
       <Background />
     </Canvas>
